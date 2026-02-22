@@ -1,0 +1,308 @@
+/* Reset e configurações base */
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Melhorar contraste de foco para acessibilidade */
+*:focus {
+    outline: 3px solid #4A90E2;
+    outline-offset: 2px;
+}
+
+html {
+    font-size: 16px; /* Base para escalabilidade */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Seção esquerda - Banner */
+.loginLeft {
+    background-image: url("../img/BackgroundImg.png");
+    background-position: center;
+    background-size: cover;
+    flex: 5.5;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Melhorar legibilidade sobre imagem */
+}
+
+.loginRight {
+    flex: 4.5;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+/* Logo */
+.logo {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo2 {
+    width: 48px;
+    height: 48px;
+}
+
+.SAADI {
+    padding-left: 10px;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Texto da seção esquerda */
+.textLeft {
+    padding-left: 50px;
+    padding-top: 55px;
+}
+
+.tituloInicial {
+    font-size: 2.8rem;
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+.textLeftSubtitulo {
+    font-size: 1.25rem;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.footerText {
+    padding-top: 110px;
+    font-size: 0.875rem;
+}
+
+/* Formulário de login */
+.login {
+    width: 450px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.bemVindo {
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: #212121;
+}
+
+.subtitle {
+    margin-top: 10px;
+    color: #666666;
+    font-size: 1rem;
+}
+
+.formLogin {
+    padding-top: 20px;
+}
+
+/* Labels e inputs */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #212121;
+    font-size: 1rem;
+}
+
+.labelContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputEmail {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.inputSenha {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+/* Inputs com melhor contraste e tamanho adequado */
+input {
+    width: 100%;
+    min-height: 48px; /* WCAG: mínimo 44px, usando 48px para conforto */
+    padding: 12px 16px;
+    border: 2px solid #CCCCCC;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #212121;
+    background-color: #FFFFFF;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+    color: #757575; /* Contraste adequado para placeholders */
+}
+
+input:hover {
+    border-color: #999999;
+}
+
+input:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+    outline: none;
+}
+
+/* Link de redefinir senha */
+.resetSenha {
+    color: #4A90E2;
+    font-size: 0.875rem;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.resetSenha:hover {
+    color: #357ABD;
+    background-color: #F0F7FF;
+}
+
+.resetSenha:focus {
+    outline: 3px solid #4A90E2;
+    outline-offset: 2px;
+}
+
+/* Botão com tamanho adequado e bom contraste */
+button {
+    width: 100%;
+    min-height: 48px; /* WCAG: mínimo 44px */
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: 3px solid #212121;
+    outline-offset: 2px;
+}
+
+button a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+/* Divisor */
+.divider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-top: 1px solid #E0E0E0;
+}
+
+/* Texto de ajuda e suporte */
+.helpText {
+    text-align: center;
+    color: #424242;
+    font-size: 0.938rem;
+}
+
+.linkSupport {
+    color: #4A90E2;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.linkSupport:hover {
+    color: #357ABD;
+    background-color: #F0F7FF;
+    text-decoration: underline;
+}
+
+.linkSupport:focus {
+    outline: 3px solid #4A90E2;
+    outline-offset: 2px;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    font-size: 0.813rem;
+    margin-top: 50px;
+    color: #757575;
+}
+
+/* Links gerais */
+a {
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .loginLeft {
+        flex: 1;
+        min-height: 200px;
+    }
+    
+    .loginRight {
+        flex: 1;
+    }
+    
+    .tituloInicial {
+        font-size: 2rem;
+    }
+    
+    .textLeftSubtitulo {
+        font-size: 1rem;
+    }
+    
+    .login {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Alto contraste para usuários com necessidades especiais */
+@media (prefers-contrast: high) {
+    input {
+        border-width: 3px;
+    }
+    
+    button {
+        border: 3px solid #212121;
+    }
+}
+
+/* Redução de movimento para usuários sensíveis */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
